@@ -1,9 +1,11 @@
 import Navbar from "../../../components/navbar";
-import { getServerSession } from '@/lib/auth';
+import { getServerSession } from '../../lib/auth';
+
 import axios from "axios";
 
 export default async function PostPage({ params }) {
   const session = await getServerSession();
+
 
   if (!session) {
     return (
