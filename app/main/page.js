@@ -1,5 +1,5 @@
 import Navbar from "../../components/navbar";
-import { auth } from "../../api/auth/[...auth]/route";
+import { getServerSession } from '@/lib/auth';
 import axios from "axios";
 
 export default async function MainPage() {
