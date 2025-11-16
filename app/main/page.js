@@ -3,7 +3,7 @@ import { auth } from "../../api/auth/[...auth]/route";
 import axios from "axios";
 
 export default async function MainPage() {
-  const session = await auth().getSession();
+  const session = await getServerSession();
 
   if (!session) {
     return (
